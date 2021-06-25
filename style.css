@@ -300,26 +300,7 @@ body {
 
   .box {
     width: 80%;
-    height: 80vh;
-  }
-
-  .box .inBox.login .loginForm {
-    margin-top: -400rem;
-  }
-
-  .SignupForm {
-    margin-top: -400rem;
-  }
-}
-
-@media (max-width: 360px) {
-  html {
-    font-size: 3%;
-  }
-
-  .box {
-    width: 80%;
-    height: 80vh;
+    height: 65vh;
   }
 
   .box .inBox.login .loginForm {
@@ -327,6 +308,25 @@ body {
   }
 
   .SignupForm {
-    margin-top: -150rem;
+    margin-top: -100rem;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 2.9%;
+  }
+
+  .box {
+    width: 80%;
+    height: 65vh;
+  }
+
+  .box .inBox.login .loginForm {
+    margin-top: -250rem;
+  }
+
+  .SignupForm {
+    margin-top: -120rem;
   }
 }
