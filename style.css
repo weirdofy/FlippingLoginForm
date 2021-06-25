@@ -60,7 +60,6 @@ body {
 .box .inBox.login .loginForm {
   width: 500rem;
   height: auto;
-  border: 2rem solid;
 }
 
 .box .inBox.login .loginForm input {
@@ -166,7 +165,6 @@ body {
 .box .inBox.signup .SignupForm {
   width: 500rem;
   height: auto;
-  border: 2rem solid;
 }
 
 .box .inBox.signup .SignupForm input {
@@ -306,11 +304,11 @@ body {
   }
 
   .box .inBox.login .loginForm {
-    margin-top: -180rem;
+    margin-top: -400rem;
   }
 
   .SignupForm {
-    margin-top: -50rem;
+    margin-top: -400rem;
   }
 }
 
@@ -325,10 +323,10 @@ body {
   }
 
   .box .inBox.login .loginForm {
-    margin-top: -180rem;
+    margin-top: -300rem;
   }
 
   .SignupForm {
-    margin-top: -50rem;
+    margin-top: -150rem;
   }
 }
