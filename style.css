@@ -1,0 +1,334 @@
+html {
+  font-size: 6.25%;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+body {
+  background: linear-gradient(90deg, purple, red);
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 80vh;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.box .inBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+
+/* Login */
+
+.box .inBox.login {
+  background: #ff0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login .titleLogin {
+  font-size: 150rem;
+}
+
+.box .inBox.login .loginForm {
+  width: 500rem;
+  height: auto;
+  border: 2rem solid;
+}
+
+.box .inBox.login .loginForm input {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  height: 60rem;
+  margin: 20rem;
+  font-size: 25rem;
+  font-family: monospace;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2rem solid rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.box .inBox.login .loginForm input:focus {
+  border-bottom: 3rem solid rgba(0, 0, 0, 1);
+}
+
+.box .inBox.login .loginForm input::placeholder {
+  color: #000;
+  font-size: 25rem;
+  margin-left: 40rem;
+}
+
+#btnLoginLg {
+  width: 200rem;
+  height: 80rem;
+  margin: 40rem 20rem;
+  background: #000;
+  border: none;
+  font-size: 25rem;
+  font-family: monospace;
+  color: #ff0;
+  cursor: pointer;
+}
+
+#btnSupLg {
+  position: relative;
+  width: 200rem;
+  height: 80rem;
+  margin: 40rem 20rem;
+  background: transparent;
+  font-size: 25rem;
+  font-family: monospace;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s linear;
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  -ms-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+}
+
+#btnSupLg:hover {
+  background: #ff0;
+}
+
+#btnSupLg::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3%;
+  background: #000;
+  color: #ff0;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+}
+
+#btnSupLg:hover::before {
+  width: 100%;
+}
+
+.box .inBox.signup {
+  background: #0ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}
+
+/* Signup */
+
+.signup .titleSup {
+  font-size: 150rem;
+}
+
+.box .inBox.signup .SignupForm {
+  width: 500rem;
+  height: auto;
+  border: 2rem solid;
+}
+
+.box .inBox.signup .SignupForm input {
+  width: 90%;
+  height: 60rem;
+  margin: 20rem;
+  font-size: 25rem;
+  font-family: monospace;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2rem solid rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.box .inBox.signup .SignupForm input:focus {
+  border-bottom: 3rem solid rgba(0, 0, 0, 1);
+}
+
+.box .inBox.signup .SignupForm input::placeholder {
+  color: #000;
+  margin-left: 20rem;
+  font-size: 25rem;
+}
+
+#btnSignupSp {
+  width: 200rem;
+  height: 80rem;
+  margin: 20rem;
+  background: #000;
+  border: none;
+  font-size: 25rem;
+  font-family: monospace;
+  color: #0ff;
+  cursor: pointer;
+}
+
+#btnLoginSp {
+  position: relative;
+  width: 200rem;
+  height: 80rem;
+  margin: 20rem;
+  background: transparent;
+  font-size: 25rem;
+  font-family: monospace;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s linear;
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  -ms-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+}
+
+#btnLoginSp::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3%;
+  background: #000;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+}
+
+#btnLoginSp:hover::before {
+  width: 100%;
+}
+
+/* RWD QUERIES */
+
+@media (max-width: 1368px) {
+  html {
+    font-size: 7%;
+  }
+
+  .box {
+    width: 80%;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 8%;
+  }
+
+  .box {
+    width: 80%;
+    height: 80vh;
+  }
+
+  .box .inBox.login,
+  .inBox.signup {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .box .inBox.login .loginForm {
+    margin-top: -400rem;
+  }
+  .SignupForm {
+    margin-top: -300rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 7%;
+  }
+
+  .box .inBox.login .loginForm {
+    margin-top: -300rem;
+  }
+
+  .SignupForm {
+    margin-top: -150rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 4%;
+  }
+
+  .box {
+    width: 80%;
+    height: 80vh;
+  }
+
+  .box .inBox.login .loginForm {
+    margin-top: -180rem;
+  }
+
+  .SignupForm {
+    margin-top: -50rem;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 3%;
+  }
+
+  .box {
+    width: 80%;
+    height: 80vh;
+  }
+
+  .box .inBox.login .loginForm {
+    margin-top: -180rem;
+  }
+
+  .SignupForm {
+    margin-top: -50rem;
+  }
+}
